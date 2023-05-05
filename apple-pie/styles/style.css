@@ -5,11 +5,22 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -36,10 +47,14 @@ body {
   align-items: center;
 }
 
-
 /* page content */
+
+hr {
+  border: 1.5px solid gray;
+}
+
 .page-content {
-  padding: 50px;
+  padding: 100px;
 }
 
 .recipe-info-section {
@@ -48,7 +63,59 @@ body {
   justify-content: center;
 }
 
+.recipe-info-section p {
+  color: gray;
+  font-size: 25px;
+}
+
 .recipe-info-section img {
   width: 500px;
   align-self: center;
+  margin: 10px 0;
+}
+
+/* ingredients section */
+.ingredients-section {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ingredients-section h3 {
+  font-size: 25px;
+}
+
+.ingredients-section ul {
+  margin: 20px 0;
+  list-style: none;
+  color: gray;
+  line-height: 1.5;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+.ingredients-section img {
+  width: 400px;
+  align-self: center;
+  margin: 10px 0;
+  height: 80px;
+}
+
+/* directions section */
+.directions-sections {
+  margin: 50px 0 0 0;
+}
+
+.directions-sections h3 {
+  font-size: 25px;
+  margin: 0 0 30px 0;
+}
+
+.directions-sections ul {
+  color: gray;
+  list-style: none;
+  line-height: 1.5;
+  padding-left: 10px;
+  font-size: 17px;
 }
